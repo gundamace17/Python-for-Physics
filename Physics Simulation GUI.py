@@ -25,22 +25,22 @@ class PhysicsSimUI(tk.Tk):
         
         # buttons
         self.exe_button1 = Button(self, text = "Charged Particle Moving in Magnetic Field", fg = "black",
-                                  command = self.ChargedParticleMovedInMagneticField())
+                                  command = self.ChargedParticleMovedInMagneticField)
         self.exe_button1.config(font=('Times', 12, 'bold'))
         self.exe_button1.place(x = 25, y = 40)
         
         self.exe_button2 = Button(self, text = "Planetary Motion", fg = "black",
-                                  command = self.PlanetaryMotion())
+                                  command = self.PlanetaryMotion)
         self.exe_button2.config(font=('Times', 12, 'bold'))
         self.exe_button2.place(x = 25, y = 75)
         
         self.exe_button3 = Button(self, text = "Simple Harmonic Motion", fg = "black",
-                                  command = self.SimpleHarmonicMotion())
+                                  command = self.SimpleHarmonicMotion)
         self.exe_button3.config(font=('Times', 12, 'bold'))
         self.exe_button3.place(x = 25, y = 110)
         
         self.exe_button4 = Button(self, text = "Friction Between Two Piled Blocks", fg = "black",
-                                 command = self.FrictionBetweenTwoPiledBlocks())
+                                 command = self.FrictionBetweenTwoPiledBlocks)
         self.exe_button4.config(font=('Times', 12, 'bold'))
         self.exe_button4.place(x = 25, y = 145)
     
@@ -54,7 +54,7 @@ class PhysicsSimUI(tk.Tk):
         print("Simple_Harmonic_Motion.py is executed")
     
     def FrictionBetweenTwoPiledBlocks(self):
-        #os.system('Friction_Between_Two_Piled_Blocks.py')
+        os.system('Friction_Between_Two_Piled_Blocks.py')
         print("Friction_Between_Two_Piled_Blocks.py is executed")
         
 if __name__ == '__main__':
